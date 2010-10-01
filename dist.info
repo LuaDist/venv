@@ -1,0 +1,13 @@
+--- This file is part of LuaDist project
+
+name = "venv"
+version = "1.1"
+
+desc = "Lua Virtual Environment library"
+license = "MIT/X11"
+url = "http://www.keplerproject.org/venv/"
+maintainer = "Peter Kapec"
+
+depends = {
+	"lua ~> 5.1"
+}
