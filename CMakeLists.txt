@@ -1,16 +1,15 @@
-# Copyright (C) 2007-2009 LuaDist.
+# Copyright (C) 2007-2012 LuaDist.
 # Created by Peter Kapec
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(venv NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( venv NONE )
+cmake_minimum_required ( VERSION 2.8 )
+include ( cmake/dist.cmake )
+include ( lua )
 
-# VEnv modules
-INSTALL (FILES src/stable.lua src/venv.lua DESTINATION ${INSTALL_LMOD})
-
-# Install documentation
-INSTALL(DIRECTORY doc/ DESTINATION ${INSTALL_DOC})
-INSTALL(DIRECTORY tests/  DESTINATION ${INSTALL_TEST})
+install_lua_module ( stable src/stable.lua )
+install_lua_module ( venv src/venv.lua )
+install_doc ( doc/ )
+install_test ( tests/ )

@@ -7,6 +7,7 @@ desc = "Lua Virtual Environment library"
 license = "MIT/X11"
 url = "http://www.keplerproject.org/venv/"
 maintainer = "Peter Kapec"
+author = "The Kepler Project"
 
 depends = {
 	"lua ~> 5.1"
