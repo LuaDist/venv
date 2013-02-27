@@ -1,0 +1,38 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "The Kepler Project"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "Lua Virtual Environment library"
+version = "1.1"
+maintainer = "Peter Kapec"
+files = {
+Runtime = {
+[[lib/lua/stable.lua]],
+[[lib/lua/venv.lua]],
+}
+,
+Documentation = {
+[[share/venv/doc//us/license.html]],
+[[share/venv/doc//us/manual.html]],
+[[share/venv/doc//us/venv.png]],
+[[share/venv/doc//us/index.html]],
+}
+,
+Test = {
+[[share/venv/test//script.lua]],
+[[share/venv/test//test.lua]],
+[[share/venv/test//dir.lua]],
+[[share/venv/test//lib_err.lua]],
+[[share/venv/test//script2.lua]],
+[[share/venv/test//lib2.lua]],
+[[share/venv/test//lib1.lua]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "venv"
+url = "http://www.keplerproject.org/venv/"
